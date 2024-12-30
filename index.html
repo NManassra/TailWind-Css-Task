@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noura Manassra - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui/dist/full.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-500 text-white p-4 flex justify-between items-center">
+        <h1 class="text-xl">Noura Manassra's Portfolio</h1>
+        <button id="menu-toggle" class="p-2 bg-blue-700 rounded">Menu</button>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu" class="hidden bg-blue-100 p-4">
+        <ul>
+            <li><a href="#" class="block p-2 hover:bg-blue-300">Home</a></li>
+            <li><a href="#about" class="block p-2 hover:bg-blue-300">About Me</a></li>
+            <li><a href="#projects" class="block p-2 hover:bg-blue-300">Projects</a></li>
+            <li><a href="#dark-mode" class="block p-2 hover:bg-blue-300">Dark Mode</a></li>
+            <li><a href="#daisyUI" class="block p-2 hover:bg-blue-300">daisyUI Components</a></li>
+            <li><a href="#contact" class="block p-2 hover:bg-blue-300">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-4">
+        <!-- About Me Section -->
+        <section id="about" class="mt-6">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p class="text-lg mt-2">
+                Hello! I'm <strong>Noura Manassra</strong>, a Computer Engineering student with a passion for 
+                <strong>Artificial Intelligence</strong> and <strong>Network Design</strong>. 
+                I aspire to create technology that empowers young minds in Palestine to innovate and not just consume.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mt-6">
+            <h2 class="text-2xl font-bold">My Projects</h2>
+            <ul class="list-disc pl-5 mt-2 text-lg">
+                <li>Designed a <strong>16-bit comparator</strong> using LTSpice and implemented its layout.</li>
+                <li>Developed a <strong>Car Service Management System</strong> using JavaFX and MySQL.</li>
+                <li>Created an <strong>Electronic Nose</strong> project to detect diseases through breath analysis.</li>
+                <li>Implemented a <strong>MIPS Assembly Linear Equation Solver</strong> using Cramer’s Rule.</li>
+            </ul>
+        </section>
+
+        <!-- Responsive Design Section -->
+        <section id="responsive" class="mt-6">
+            <h2 class="text-2xl font-bold">Responsive Design</h2>
+            <p class="text-lg mt-2">Resize the window to see the layout adjust dynamically for different screen sizes.</p>
+        </section>
+
+        <!-- Dark Mode Section -->
+        <section id="dark-mode" class="mt-6">
+            <h2 class="text-2xl font-bold">Dark Mode</h2>
+            <button onclick="document.documentElement.classList.toggle('dark')" class="mt-2 p-2 bg-gray-700 text-white rounded">
+                Toggle Dark Mode
+            </button>
+        </section>
+
+        <!-- daisyUI Components Section -->
+        <section id="daisyUI" class="mt-6">
+            <h2 class="text-2xl font-bold">daisyUI Components</h2>
+            <div class="alert alert-success shadow-lg mt-4">
+                <div>
+                    <span>Noura manassra test test do u hear meeeeee!</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mt-6">
+            <h2 class="text-2xl font-bold">Contact Me</h2>
+            <p class="text-lg mt-2">Feel free to reach out to discuss opportunities or collaborations!</p>
+            <p class="text-lg mt-2">
+                Email: <a href="mailto:noura@example.com" class="text-blue-500 hover:underline">noura@example.com</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white p-4 mt-6">
+        <div class="text-center">
+            <p>&copy; 2024 Noura Manassra. All rights reserved.</p>
+            <p>Follow me on 
+                <a href="#" class="text-blue-400 hover:underline">LinkedIn</a>, 
+                <a href="#" class="text-blue-400 hover:underline">GitHub</a>, and 
+                <a href="#" class="text-blue-400 hover:underline">Instagram</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
